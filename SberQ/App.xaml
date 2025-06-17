@@ -4,6 +4,13 @@
              xmlns:local="clr-namespace:SberQ"
              >
     <Application.Resources>
-
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/View/Styles/Page1Style.xaml" />
+                <ResourceDictionary Source="/View/Styles/Page2Style.xaml" />
+                <ResourceDictionary Source="/View/Styles/Page3Style.xaml" />
+                <ResourceDictionary Source="/View/Styles/Page4Style.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

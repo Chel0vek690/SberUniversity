@@ -7,10 +7,6 @@
       xmlns:vm="clr-namespace:SberQ.ViewModel"
       mc:Ignorable="data" 
       data:DesignHeight="1920" data:DesignWidth="1080">
-    <Page.Resources>
-        <ResourceDictionary Source="/View/Styles/Page1Style.xaml" />
-    </Page.Resources>
-
     <Grid>
         <StackPanel Style="{StaticResource Main}" >
             <StackPanel Style="{StaticResource Main1}">

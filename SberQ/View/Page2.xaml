@@ -7,10 +7,6 @@
       mc:Ignorable="d" 
       d:DesignHeight="1920" d:DesignWidth="1080"
       Title="Page2">
-    <Page.Resources>
-        <ResourceDictionary Source="/View/Styles/Page2Style.xaml" />
-    </Page.Resources>
-
     <Grid>
         <StackPanel HorizontalAlignment="Right">
             <Button Style="{StaticResource Button_Cancel}" Command="{Binding ReturnToPage1Command}">
