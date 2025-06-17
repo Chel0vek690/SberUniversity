@@ -1,0 +1,22 @@
+﻿<Window x:Class="SberQ.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SberQ"
+        xmlns:vm="clr-namespace:SberQ.ViewModel"
+        xmlns:svgc="http://sharpvectors.codeplex.com/svgc/" 
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1920" Width="1080"
+        x:Name="MainWindows1"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid x:Name="MainGrid1">
+        <Canvas Margin="60 60.46 0 0">
+            <Image Source="/Assets/Images/SberUniversity.png" Width="368" Height="33" />
+        </Canvas>
+        <Frame x:Name="toPage1" NavigationUIVisibility="Hidden" />
+    </Grid>
+</Window>

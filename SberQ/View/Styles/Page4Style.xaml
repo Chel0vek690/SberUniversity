@@ -1,0 +1,110 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="MainStackPanel_Page4">
+        <Setter Property="StackPanel.Width" Value="795" />
+        <Setter Property="StackPanel.Height" Value="1156" />
+        <Setter Property="StackPanel.HorizontalAlignment" Value="Center" />
+        <Setter Property="StackPanel.Orientation" Value="Vertical" />
+    </Style>
+
+    <Style x:Key="YourResults">
+        <Setter Property="TextBlock.FontWeight" Value="SemiBold"/>
+        <Setter Property="TextBlock.FontFamily" Value="pack://application:,,,/SberQ;component/Assets/Fonts/#SB Sans Display"/>
+        <Setter Property="TextBlock.Foreground" Value="White"/>
+        <Setter Property="TextBlock.FontSize" Value="72"/>
+        <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="Main2">
+        <Setter Property="StackPanel.Clip">
+            <Setter.Value>
+                <RectangleGeometry Rect="0,0,655,263" RadiusX="36" RadiusY="36"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="StackPanel.Orientation" Value="Horizontal" />
+        <Setter Property="StackPanel.Margin" Value="0 95 0 0"/>
+        <Setter Property="StackPanel.Background" Value="#33FFFFFF"/>
+        <Setter Property="StackPanel.Height" Value="263"/>
+        <Setter Property="StackPanel.Width" Value="655"/>
+    </Style>
+
+    <Style x:Key="Main22" BasedOn="{StaticResource Main2}">
+        <Setter Property="StackPanel.Margin" Value="0 40 0 0" />
+    </Style>
+
+    <Style x:Key="Main3">
+        <Setter Property="StackPanel.Orientation" Value="Horizontal" />
+        <Setter Property="StackPanel.Width" Value="607" />
+        <Setter Property="StackPanel.Height" Value="215" />
+        <Setter Property="StackPanel.HorizontalAlignment" Value="Center" />
+        <Setter Property="StackPanel.VerticalAlignment" Value="Center" />
+        <Setter Property="StackPanel.Margin" Value="24" />
+    </Style>
+
+    <Style x:Key="Body_Page4">
+        <Setter Property="TextBlock.Margin" Value="0 63 0 0" />
+        <Setter Property="TextBlock.FontWeight" Value="Regular"/>
+        <Setter Property="TextBlock.FontFamily" Value="pack://application:,,,/SberQ;component/Assets/Fonts/#SB Sans Text"/>
+        <Setter Property="TextBlock.Foreground" Value="White"/>
+        <Setter Property="TextBlock.FontSize" Value="36"/>
+        <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="QRCode2">
+        <Setter Property="Image.Source" Value="pack://application:,,,/SberQ;component/Assets/Images/qr2.png"/>
+        <Setter Property="Image.Width" Value="215"/>
+        <Setter Property="Image.Height" Value="215"/>
+        <Setter Property="Image.HorizontalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="TextQR">
+        <Setter Property="TextBlock.FontFamily" Value="pack://application:,,,/SberQ;component/Assets/Fonts/#SB Sans Display"/>
+        <Setter Property="TextBlock.Margin" Value="36 0 0 0" />
+        <Setter Property="TextBlock.TextAlignment" Value="Left" />
+        <Setter Property="TextBlock.Foreground" Value="White"/>
+        <Setter Property="TextBlock.FontSize" Value="32"/>
+        <Setter Property="TextBlock.Width" Value="356"/>
+        <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+    </Style>
+
+    <Style x:Key="TextQR1" BasedOn="{StaticResource TextQR}">
+        <Setter Property="TextBlock.Height" Value="114" />
+    </Style>
+
+    <Style x:Key="TextQR2" BasedOn="{StaticResource TextQR}">
+        <Setter Property="TextBlock.Height" Value="152" />
+    </Style>
+
+    <Style x:Key="QRCode3">
+        <Setter Property="Image.Width" Value="215"/>
+        <Setter Property="Image.Height" Value="215"/>
+        <Setter Property="Image.HorizontalAlignment" Value="Center"/>
+        <Setter Property="Image.Source" Value="/Assets/Images/qr3.png"/>
+    </Style>
+
+    <Style x:Key="ButtonStart">
+        <Setter Property="Button.Background" Value="White" />
+        <Setter Property="Button.Width" Value="510" />
+        <Setter Property="Button.Height" Value="122" />
+        <Setter Property="Button.Margin" Value="0 95 0 0" />
+        <Setter Property="Button.FontFamily" Value="pack://application:,,,/SberQ;component/Assets/Fonts/#SB Sans Text"/>
+        <Setter Property="Button.FontWeight" Value="SemiBold"/>
+        <Setter Property="Button.FontSize" Value="36" />
+        <Setter Property="Button.Foreground" Value="#18AA7B" />
+        <Setter Property="Button.BorderThickness" Value="0" />
+        <Setter Property="Button.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="24" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="#E0E0E0"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
