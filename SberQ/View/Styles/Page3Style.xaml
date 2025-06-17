@@ -179,29 +179,6 @@
         <Setter Property="TextBlock.Foreground" Value="#393939" />
     </Style>
 
-    <Style x:Key="ButtonCancel_ModalWindow">
-        <Setter Property="Button.Width" Value="338" />
-        <Setter Property="Button.Height" Value="94" />
-        <Setter Property="Button.Background" Value="#18AA7B" />
-        <Setter Property="Button.Foreground" Value="White" />
-        <Setter Property="Button.Margin" Value="0 95 0 0" />
-        <Setter Property="Button.FontSize" Value="24" />
-        <Setter Property="Button.Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="Button">
-                    <Border x:Name="border" Background="{TemplateBinding Background}" BorderThickness="0" CornerRadius="24">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsPressed" Value="True">
-                            <Setter TargetName="border" Property="Background" Value="#CC18AA7B" />
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-
     <Style x:Key="ModalWindow_Agreement" BasedOn="{StaticResource ModalWindow_Policy}">
         <Setter Property="StackPanel.Height" Value="1122" />
         <Setter Property="StackPanel.Margin" Value="0 399 0 0" />
@@ -239,75 +216,6 @@
         <Setter Property="TextBlock.TextAlignment" Value="Center"/>
         <Setter Property="TextBlock.Margin" Value="0 24 0 0" />
     </Style>
-
-    
-
-    <Style x:Key="Button_finish1">
-        <Setter Property="Button.Background" Value="#33FFFFFF" />
-        <Setter Property="Button.FontFamily" Value="pack://application:,,,/SberQ;component/Resources/Fonts/#SB Sans Text"/>
-        <Setter Property="Button.FontSize" Value="24" />
-        <Setter Property="Button.Foreground" Value="#FFFFFF" />
-        <Setter Property="Button.Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="Button">
-                    <Border x:Name="border" Background="{TemplateBinding Background}" BorderThickness="1" BorderBrush="#FFFFFF" CornerRadius="12">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsPressed" Value="True">
-                            <Setter TargetName="border" Property="Background" Value="#45FFfFFF" />
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-        <Setter Property="Button.Width" Value="382" />
-        <Setter Property="Button.Height" Value="94" />
-        <Setter Property="Button.Margin" Value="0 32 0 0" />
-        <Setter Property="Button.FontWeight" Value="Regular"/>
-        <Setter Property="Button.BorderBrush" Value="#FFFFFFFF" />
-    </Style>
-    
-    <Style x:Key="toTheMainPage" BasedOn="{StaticResource Button_finish1}">
-        <Setter Property="Button.Width" Value="344" />
-        <Setter Property="Button.Margin" Value="0 0 0 0" />
-        
-    </Style>
-
-    
-
-    <Style x:Key="Button_getResult" >
-        <Setter Property="Button.Background" Value="White" />
-        <Setter Property="Button.FontFamily" Value="pack://application:,,,/SberQ;component/Assets/Fonts/#SB Sans Text"/>
-        <Setter Property="Button.Foreground" Value="#18AA7B" />
-        <Setter Property="Button.BorderThickness" Value="0" />
-        <Setter Property="Button.Width" Value="382" />
-        <Setter Property="Button.Height" Value="94" />
-        <Setter Property="Button.Margin" Value="32 32 0 0" />
-        <Setter Property="Button.FontWeight" Value="Regular"/>
-        <Setter Property="Button.FontSize" Value="24"/>
-        <Setter Property="Button.Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="Button">
-                    <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="24" >
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsPressed" Value="True">
-                            <Setter TargetName="border" Property="Background" Value="#E0E0E0"/>
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-
-    <Style x:Key="TryAgain" BasedOn="{StaticResource Button_getResult}">
-        <Setter Property="Button.Width" Value="344" />
-        <Setter Property="Button.Margin" Value="32 0 0 0" />
-        <Setter Property="Button.Foreground" Value="#18AA7B" />
-    </Style>
-
 
     <Style x:Key="NiceScrollBar" TargetType="ScrollBar">
         <Setter Property="Template">
