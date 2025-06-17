@@ -5,12 +5,8 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SberQ"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="1920" d:DesignWidth="1080"
       Title="Page4">
-    <Page.Resources>
-        <ResourceDictionary Source="/View/Styles/Page4Style.xaml" />
-    </Page.Resources>
-
     <Grid>
         <StackPanel Style="{StaticResource MainStackPanel_Page4}">
             <TextBlock Style="{StaticResource YourResults}">Ваши результаты</TextBlock>

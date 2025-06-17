@@ -7,10 +7,6 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page3">
-    <Page.Resources>
-        <ResourceDictionary Source="/View/Styles/Page3Style.xaml" />
-    </Page.Resources>
-
     <Grid>
         <StackPanel Style="{StaticResource MainStackPanel_Result}" >
             <StackPanel>
