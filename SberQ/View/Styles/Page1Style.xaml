@@ -71,29 +71,5 @@
         <Setter Property="TextBlock.Height" Value="114" />
     </Style>
 
-    <Style x:Key="ButtonStart">
-        <Setter Property="Button.Background" Value="White" />
-        <Setter Property="Button.Width" Value="510" />
-        <Setter Property="Button.Height" Value="122" />
-        <Setter Property="Button.Margin" Value="0 95 0 0" />
-        <Setter Property="Button.FontFamily" Value="pack://application:,,,/SberQ;component/Assets/Fonts/#SB Sans Text"/>
-        <Setter Property="Button.FontWeight" Value="SemiBold"/>
-        <Setter Property="Button.FontSize" Value="36" />
-        <Setter Property="Button.Foreground" Value="#18AA7B" />
-        <Setter Property="Button.BorderThickness" Value="0" />
-        <Setter Property="Button.Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="Button">
-                    <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="24" >
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Border>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsPressed" Value="True">
-                            <Setter TargetName="border" Property="Background" Value="#E0E0E0"/>
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
+    
 </ResourceDictionary>
