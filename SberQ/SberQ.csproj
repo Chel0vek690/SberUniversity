@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Fonts\SB Sans Display Semibold.ttf" />
+    <None Remove="Assets\Images\background.png" />
+    <None Remove="Assets\Images\background_error.png" />
+    <None Remove="Assets\Images\Group34.png" />
+    <None Remove="Assets\Images\qr1.png" />
+    <None Remove="Assets\Images\qr2.png" />
+    <None Remove="Assets\Images\qr3.png" />
+    <None Remove="Assets\Images\SberUniversity.png" />
+    <None Remove="Assets\Images\Sber_University.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Fonts\SB Sans Display Semibold.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\background.png" />
+    <Resource Include="Assets\Images\background_error.png" />
+    <Resource Include="Assets\Images\Group34.png" />
+    <Resource Include="Assets\Images\qr1.png" />
+    <Resource Include="Assets\Images\qr2.png" />
+    <Resource Include="Assets\Images\qr3.png" />
+    <Resource Include="Assets\Images\SberUniversity.png" />
+    <Resource Include="Assets\Images\Sber_University.svg" />
+    <Resource Include="Model\Email.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Model\Email.cs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="App.xaml" />
+  </ItemGroup>
+
+</Project>

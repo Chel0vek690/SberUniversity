@@ -1,0 +1,30 @@
+﻿<Page x:Class="SberQ.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:data="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SberQ"
+      xmlns:vm="clr-namespace:SberQ.ViewModel"
+      mc:Ignorable="data" 
+      data:DesignHeight="1920" data:DesignWidth="1080">
+    <Page.Resources>
+        <ResourceDictionary Source="/View/Styles/Page1Style.xaml" />
+    </Page.Resources>
+
+    <Grid>
+        <StackPanel Style="{StaticResource Main}" >
+            <StackPanel Style="{StaticResource Main1}">
+                <TextBlock Style="{StaticResource SberQSubject}">SberQ</TextBlock>
+                <TextBlock Style="{StaticResource SberQIs}" Text="SberQ — это сочетание инструментов&#xA;психодиагностики и оценки компетенций&#xA;с использованием реалистичной бизнес-&#xA;симуляции для диагностики&#xA;управленческих компетенций&#xA;и потенциала. Метод разработан&#xA;экспертами СберУниверситета, HR-блоком&#xA;Сбера и Лабораторией нейронаук&#xA;и поведения человека." />
+            </StackPanel>
+
+            <StackPanel Style="{StaticResource Main2}">
+                <StackPanel Style="{StaticResource Main3}">
+                    <Image Style="{StaticResource QR_Code}"/>
+                    <TextBlock Style="{StaticResource TextQR}" Text="Узнать больше&#xA;про оценку руководителей SberQ"></TextBlock>
+                </StackPanel>
+            </StackPanel>
+            <Button Style="{StaticResource ButtonStart}" Command="{Binding NavigateToPage2Command}">Проверить себя</Button>
+        </StackPanel>
+    </Grid>
+</Page>

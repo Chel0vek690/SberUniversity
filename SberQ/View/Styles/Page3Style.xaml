@@ -1,0 +1,372 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="MainStackPanel_Result">
+        <Setter Property="StackPanel.HorizontalAlignment" Value="Center" />
+        <Setter Property="StackPanel.VerticalAlignment" Value="Top"/>
+        <Setter Property="StackPanel.Margin" Value="142 169 142 0" />
+    </Style>
+
+    <Style x:Key="YourResult">
+        <Setter Property="TextBlock.FontWeight" Value="SemiBold"/>
+        <Setter Property="TextBlock.FontFamily" Value="pack://application:,,,/SberQ;component/Assets/Fonts/#SB Sans Display"/>
+        <Setter Property="TextBlock.Foreground" Value="White"/>
+        <Setter Property="TextBlock.FontSize" Value="72"/>
+        <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="resultText1">
+        <Setter Property="TextBlock.FontWeight" Value="Regular"/>
+        <Setter Property="TextBlock.FontFamily" Value="pack://application:,,,/SberQ;component/Assets/Fonts/#SB Sans Text"/>
+        <Setter Property="TextBlock.Foreground" Value="White"/>
+        <Setter Property="TextBlock.Margin" Value="0 40 0 0" />
+        <Setter Property="TextBlock.FontSize" Value="24"/>
+        <Setter Property="TextBlock.TextAlignment" Value="Left"/>
+        <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+    </Style>
+    
+  
+
+    <Style x:Key="resultText2" BasedOn="{StaticResource resultText1}">
+        <Setter Property="TextBlock.Margin" Value="0 16 0 0" />
+    </Style>
+
+    <Style x:Key="resultText3" BasedOn="{StaticResource resultText1}">
+        <Setter Property="TextBlock.FontSize" Value="32" />
+        <Setter Property="TextBlock.FontWeight" Value="SemiBold" />
+    </Style>
+
+    <Style x:Key="resultText4" BasedOn="{StaticResource resultText1}">
+        <Setter Property="TextBlock.FontSize" Value="19" />
+        <Setter Property="TextBlock.Margin" Value="0 16 0 0" />
+        <Setter Property="TextBlock.FontWeight" Value="Regular" />
+    </Style>
+
+    <Style x:Key="MainStackPanel2_Result" BasedOn="{StaticResource MainStackPanel_Result}">
+        <Setter Property="StackPanel.Margin" Value="0 73 0 0" />
+    </Style>
+
+    <Style x:Key="text_MainStackPanel2_Result" BasedOn="{StaticResource resultText4}">
+        <Setter Property="TextBlock.Margin" Value="0" />
+        <Setter Property="TextBlock.FontSize" Value="24" />
+    </Style>
+
+    <Style TargetType="TextBox" x:Key="inputEmail">
+        <Setter Property="TextBox.Background" Value="#19FFFFFF" />
+        <Setter Property="TextBox.BorderBrush" Value="White" />
+        <Setter Property="TextBox.Margin" Value="0 32 0 0" />
+        <Setter Property="TextBox.Height" Value="74" />
+        <Setter Property="TextBox.FontSize" Value="28" />
+        <Setter Property="TextBox.FontSize" Value="28" />
+        <Setter Property="TextBlock.FontFamily" Value="pack://application:,,,/SberQ;component/Resources/Fonts/#SB Sans Text"/>
+        <Setter Property="TextBox.TextAlignment" Value="Left" />
+        <Setter Property="TextBox.VerticalContentAlignment" Value="Center" />
+        <Setter Property="TextBox.Foreground" Value="#FFFFFF" />
+        <Setter Property="TextBox.Padding" Value="52 22 52 22" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+                    <Border 
+                    Background="{TemplateBinding Background}" 
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="{TemplateBinding BorderThickness}" 
+                    CornerRadius="20" 
+                    SnapsToDevicePixels="True">
+                        <ScrollViewer Margin="0" x:Name="PART_ContentHost"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="BackgroundText_CheckBox">
+        <Setter Property="Label.FontSize" Value="24" />
+        <Setter Property="Label.FontFamily" Value="pack://application:,,,/SberQ;component/Resources/Fonts/#SB Sans Text" />
+        <Setter Property="Label.FontWeight" Value="Regular" />
+        <Setter Property="Label.Foreground" Value="White" />
+    </Style>
+
+    <Style x:Key="checkbox_text">
+        <Setter Property="TextBlock.Foreground" Value="#FFFFFF" />
+        <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+        <Setter Property="TextBlock.Margin" Value="16 0 0 0" />
+         <Setter Property="TextBlock.Width" Value="748" />
+    </Style>
+
+    <Style x:Key="checkbox">
+        <Setter Property="CheckBox.Margin" Value="0 16 0 0" />
+        <Setter Property="CheckBox.Width" Value="796" />
+        <Setter Property="CheckBox.IsChecked" Value="False" />
+        <Setter Property="CheckBox.IsThreeState" Value="False" />
+        <Setter Property="CheckBox.FontFamily" Value="pack://application:,,,/SberQ;component/Resources/Fonts/#SB Sans Text"/>
+        <Setter Property="CheckBox.FontSize" Value="20" />
+        <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+        <Setter Property="CheckBox.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="CheckBox">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" >
+                        <Border x:Name="Border" Width="32" Height="32" BorderThickness="0" Background="White" CornerRadius="4" />
+                        <Path x:Name="CheckMark" Visibility="Collapsed" Stroke="#18AA7B" StrokeThickness="2" 
+                          Data="M4 10L7.64645 13.6464C7.84171 13.8417 8.15829 13.8417 8.35355 13.6464L16 6" Margin="-26,13,0,0" />
+                        <ContentPresenter Margin="5,0,0,0" VerticalAlignment="Center" />
+                    </StackPanel>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="CheckMark" Property="Visibility" Value="Visible" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="Background_Popap">
+        <Setter Property="StackPanel.Width" Value="1080" />
+        <Setter Property="StackPanel.Height" Value="1920" />
+        <Setter Property="StackPanel.Background" Value="#cc002436" />
+    </Style>
+
+    <Style x:Key="ModalWindow_Policy">
+        <Setter Property="StackPanel.Width" Value="960" />
+        <Setter Property="StackPanel.Height" Value="1800" />
+        <Setter Property="StackPanel.Background" Value="White" />
+        <Setter Property="StackPanel.Margin" Value="0 60 0 0" />
+        <Setter Property="StackPanel.Clip">
+            <Setter.Value>
+                <RectangleGeometry RadiusX="36" RadiusY="36" Rect="0,0,960,1800" />
+            </Setter.Value>
+        </Setter>   
+    </Style>
+
+    <Style x:Key="hyperlink">
+        <Setter Property="Hyperlink.Foreground" Value="#DBFFBD" />
+    </Style>
+
+    <Style x:Key="stackpanel1">
+        <Setter Property="StackPanel.Orientation" Value="Horizontal" />
+        <Setter Property="StackPanel.HorizontalAlignment" Value="Center" />
+        <Setter Property="StackPanel.VerticalAlignment" Value="Center" />
+    </Style>
+
+    <Style x:Key="policyText">
+        <Setter Property="TextBlock.Width" Value="799"/>
+        <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+    </Style>
+
+    <Style x:Key="politika_text">
+        <Setter Property="TextBlock.Width" Value="840" />
+        <Setter Property="TextBlock.Height" Value="1471" />
+        <Setter Property="TextBlock.VerticalAlignment" Value="Center" />
+        <Setter Property="TextBlock.HorizontalAlignment" Value="Center" />
+        <Setter Property="TextBlock.Margin" Value="60 70 60 0" />
+    </Style>
+
+    <Style x:Key="AgreementText" BasedOn="{StaticResource policyText}">
+        <Setter Property="TextBlock.Width" Value="840"/>
+    </Style>
+
+    <Style x:Key="politika_subject">
+        <Setter Property="TextBlock.FontSize" Value="28" />
+        <Setter Property="TextBlock.FontFamily" Value="pack://application:,,,/SberQ;component/Resources/Fonts/#SB Sans Display"/>
+        <Setter Property="TextBlock.FontWeight" Value="SemiBold" />
+        <Setter Property="TextBlock.Height" Value="799" />
+    </Style>
+
+    <Style x:Key="policyBody">
+        <Setter Property="TextBlock.Margin" Value="0 24 0 0" />
+        <Setter Property="TextBlock.FontSize" Value="18" />
+        <Setter Property="TextBlock.FontWeight" Value="Regular" />
+        <Setter Property="TextBlock.Foreground" Value="#393939" />
+    </Style>
+
+    <Style x:Key="ButtonCancel_ModalWindow">
+        <Setter Property="Button.Width" Value="338" />
+        <Setter Property="Button.Height" Value="94" />
+        <Setter Property="Button.Background" Value="#18AA7B" />
+        <Setter Property="Button.Foreground" Value="White" />
+        <Setter Property="Button.Margin" Value="0 95 0 0" />
+        <Setter Property="Button.FontSize" Value="24" />
+        <Setter Property="Button.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="border" Background="{TemplateBinding Background}" BorderThickness="0" CornerRadius="24">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="#CC18AA7B" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ModalWindow_Agreement" BasedOn="{StaticResource ModalWindow_Policy}">
+        <Setter Property="StackPanel.Height" Value="1122" />
+        <Setter Property="StackPanel.Margin" Value="0 399 0 0" />
+        <Setter Property="StackPanel.Clip">
+            <Setter.Value>
+                <RectangleGeometry RadiusX="36" RadiusY="36" Rect="0,0,960,1122" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="politika_Agreement" BasedOn="{StaticResource politika_text}">
+        <Setter Property="TextBlock.Height" Value="793" />
+    </Style>
+
+    <Style x:Key="ModalWindow_Error">
+        <Setter Property="StackPanel.Width" Value="960" />
+        <Setter Property="StackPanel.Height" Value="713" />
+        <Setter Property="StackPanel.Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="pack://application:,,,/SberQ;component/Assets/Images/Background_error.png" />
+            </Setter.Value>
+        </Setter>
+        <Setter Property="StackPanel.Margin" Value="0 604 0 0" />
+        <Setter Property="StackPanel.Clip">
+            <Setter.Value>
+                <RectangleGeometry RadiusX="36" RadiusY="36" Rect="0,0,960,713" />
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="BodyTextError">
+        <Setter Property="TextBlock.FontSize" Value="36" />
+        <Setter Property="TextBlock.Foreground" Value="White" />
+        <Setter Property="TextBlock.FontFamily" Value="pack://application:,,,/SberQ;component/Assets/Fonts/#SB Sans Text"  />
+        <Setter Property="TextBlock.TextAlignment" Value="Center"/>
+        <Setter Property="TextBlock.Margin" Value="0 24 0 0" />
+    </Style>
+
+    
+
+    <Style x:Key="Button_finish1">
+        <Setter Property="Button.Background" Value="#33FFFFFF" />
+        <Setter Property="Button.FontFamily" Value="pack://application:,,,/SberQ;component/Resources/Fonts/#SB Sans Text"/>
+        <Setter Property="Button.FontSize" Value="24" />
+        <Setter Property="Button.Foreground" Value="#FFFFFF" />
+        <Setter Property="Button.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="border" Background="{TemplateBinding Background}" BorderThickness="1" BorderBrush="#FFFFFF" CornerRadius="12">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="#45FFfFFF" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Button.Width" Value="382" />
+        <Setter Property="Button.Height" Value="94" />
+        <Setter Property="Button.Margin" Value="0 32 0 0" />
+        <Setter Property="Button.FontWeight" Value="Regular"/>
+        <Setter Property="Button.BorderBrush" Value="#FFFFFFFF" />
+    </Style>
+    
+    <Style x:Key="toTheMainPage" BasedOn="{StaticResource Button_finish1}">
+        <Setter Property="Button.Width" Value="344" />
+        <Setter Property="Button.Margin" Value="0 0 0 0" />
+        
+    </Style>
+
+    
+
+    <Style x:Key="Button_getResult" >
+        <Setter Property="Button.Background" Value="White" />
+        <Setter Property="Button.FontFamily" Value="pack://application:,,,/SberQ;component/Assets/Fonts/#SB Sans Text"/>
+        <Setter Property="Button.Foreground" Value="#18AA7B" />
+        <Setter Property="Button.BorderThickness" Value="0" />
+        <Setter Property="Button.Width" Value="382" />
+        <Setter Property="Button.Height" Value="94" />
+        <Setter Property="Button.Margin" Value="32 32 0 0" />
+        <Setter Property="Button.FontWeight" Value="Regular"/>
+        <Setter Property="Button.FontSize" Value="24"/>
+        <Setter Property="Button.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border x:Name="border" Background="{TemplateBinding Background}" CornerRadius="24" >
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="#E0E0E0"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="TryAgain" BasedOn="{StaticResource Button_getResult}">
+        <Setter Property="Button.Width" Value="344" />
+        <Setter Property="Button.Margin" Value="32 0 0 0" />
+        <Setter Property="Button.Foreground" Value="#18AA7B" />
+    </Style>
+
+
+    <Style x:Key="NiceScrollBar" TargetType="ScrollBar">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ScrollBar">
+                    <Grid Background="Transparent">
+                        <Track Name="PART_Track" 
+                IsDirectionReversed="true" Width="10">
+                            <Track.DecreaseRepeatButton>
+                                <RepeatButton IsHitTestVisible="False" BorderThickness="0" Command="ScrollBar.LineUpCommand" VerticalAlignment="Stretch" Background="Transparent"/>
+                            </Track.DecreaseRepeatButton>
+                            <Track.Thumb>
+                                <Thumb Width="10">
+                                    <Thumb.Template>
+                                        <ControlTemplate TargetType="Thumb">
+                                            <Rectangle Fill="#B0005F61" RadiusX="5" RadiusY="5"/>
+                                        </ControlTemplate>
+                                    </Thumb.Template>
+                                </Thumb>
+                            </Track.Thumb>
+                            <Track.IncreaseRepeatButton>
+                                <RepeatButton IsHitTestVisible="False" BorderThickness="0" VerticalAlignment="Stretch" Command="ScrollBar.LineDownCommand" Background="Transparent"/>
+                            </Track.IncreaseRepeatButton>
+                        </Track>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="YourResult1" BasedOn="{StaticResource YourResult}">
+        <Setter Property="TextBlock.Margin" Value="0 120 0 0" />
+    </Style>
+
+    <Style x:Key="ErrorButtons">
+        <Setter Property="StackPanel.Orientation" Value="Horizontal" />
+        <Setter Property="StackPanel.Width" Value="720" />
+        <Setter Property="StackPanel.Margin" Value="0 95 0 0" />
+    </Style>
+
+    <Style x:Key="ScrollViewer">
+        <Setter Property="ScrollViewer.Height" Value="1471"/>
+        <Setter Property="ScrollViewer.Width" Value="840"/>
+        <Setter Property="ScrollViewer.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ScrollViewer">
+                    <Grid>
+                        <ScrollContentPresenter />
+                        <ScrollBar x:Name="PART_VerticalScrollBar"
+                           Orientation="Vertical"
+                           Style="{StaticResource NiceScrollBar}"
+                           Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}"
+                           Maximum="{TemplateBinding ScrollableHeight}"
+                           Value="{TemplateBinding VerticalOffset}"
+                           ViewportSize="{TemplateBinding ViewportHeight}"
+                           Margin="820,23,0,0" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
