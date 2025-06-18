@@ -1,0 +1,25 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="QR_Code">
+        <Setter Property="Image.Source" Value="pack://application:,,,/SberQ;component/Assets/Images/qr1.png"/>
+        <Setter Property="Image.Width" Value="215"/>
+        <Setter Property="Image.Height" Value="215"/>
+        <Setter Property="Image.HorizontalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="QRCode2">
+        <Setter Property="Image.Source" Value="pack://application:,,,/SberQ;component/Assets/Images/qr2.png"/>
+        <Setter Property="Image.Width" Value="215"/>
+        <Setter Property="Image.Height" Value="215"/>
+        <Setter Property="Image.HorizontalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="QRCode3">
+        <Setter Property="Image.Width" Value="215"/>
+        <Setter Property="Image.Height" Value="215"/>
+        <Setter Property="Image.HorizontalAlignment" Value="Center"/>
+        <Setter Property="Image.Source" Value="/Assets/Images/qr3.png"/>
+    </Style>
+
+</ResourceDictionary>

@@ -3,11 +3,6 @@
     
     
 
-    <Style x:Key="QR_Code">
-        <Setter Property="Image.Source" Value="pack://application:,,,/SberQ;component/Assets/Images/qr1.png"/>
-        <Setter Property="Image.Width" Value="215"/>
-        <Setter Property="Image.Height" Value="215"/>
-        <Setter Property="Image.HorizontalAlignment" Value="Center"/>
-    </Style>
+    
   
 </ResourceDictionary>
