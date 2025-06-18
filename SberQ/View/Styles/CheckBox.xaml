@@ -1,0 +1,32 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style x:Key="checkbox">
+        <Setter Property="CheckBox.Margin" Value="0 16 0 0" />
+        <Setter Property="CheckBox.Width" Value="796" />
+        <Setter Property="CheckBox.IsChecked" Value="False" />
+        <Setter Property="CheckBox.IsThreeState" Value="False" />
+        <Setter Property="CheckBox.FontFamily" Value="pack://application:,,,/SberQ;component/Resources/Fonts/#SB Sans Text"/>
+        <Setter Property="CheckBox.FontSize" Value="20" />
+        <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+        <Setter Property="CheckBox.Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="CheckBox">
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" >
+                        <Border x:Name="Border" Width="32" Height="32" BorderThickness="0" Background="White" CornerRadius="4" />
+                        <Path x:Name="CheckMark" Visibility="Collapsed" Stroke="#18AA7B" StrokeThickness="2" 
+                      Data="M4 10L7.64645 13.6464C7.84171 13.8417 8.15829 13.8417 8.35355 13.6464L16 6" Margin="-26,13,0,0" />
+                        <ContentPresenter Margin="5,0,0,0" VerticalAlignment="Center" />
+                    </StackPanel>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter TargetName="CheckMark" Property="Visibility" Value="Visible" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
