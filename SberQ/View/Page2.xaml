@@ -22,7 +22,7 @@
             <StackPanel Style="{StaticResource MainStackPanel11}">
                 <StackPanel Margin="40">
                     <TextBlock Style="{StaticResource TextQuestionTestSberQ}">1. На какой срок у вас есть карьерная цель:</TextBlock>
-                    <Slider Style="{StaticResource Slider1}" x:Name="Page2Slider2" Value="{Binding SliderValue1}" />
+                    <Slider Style="{StaticResource Slider1}" Value="{Binding SliderValue1}" />
                     <Grid Style="{StaticResource GridTestSberQ}">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
@@ -35,7 +35,7 @@
                     </Grid>
 
                     <TextBlock Style="{StaticResource TextQuestionTestSberQMargin07200}">2. Как часто вы занимаетесь собственным развитием:</TextBlock>
-                    <Slider Style="{StaticResource Slider1}" x:Name="Page2_Slider2" Value="{Binding SliderValue2}" />
+                    <Slider Style="{StaticResource Slider1}" Value="{Binding SliderValue2}" />
                     <Grid Style="{StaticResource GridTestSberQ}">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
@@ -46,9 +46,10 @@
                         <TextBlock Style="{StaticResource GridTextTestSberQCenter}" Grid.Column="1">Переодически</TextBlock>
                         <TextBlock Style="{StaticResource GridTextTestSberQRight}" Grid.Column="2">Постоянно</TextBlock>
                     </Grid>
+                    
 
                     <TextBlock Style="{StaticResource TextQuestionTestSberQMargin07200}">3. Как вы понимаете свои сильные стороны:</TextBlock>
-                    <Slider Style="{StaticResource Slider1}" x:Name="Page2_Slider3" Value="{Binding SliderValue3}" />
+                    <Slider Style="{StaticResource Slider1}" Value="{Binding SliderValue3}"  />
                     <Grid Style="{StaticResource GridTestSberQ}">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
@@ -67,7 +68,7 @@
                     </Grid>
 
                     <TextBlock Style="{StaticResource TextQuestionTestSberQMargin07200}">4. Как вы понимаете, какие компетенции нужно развивать:</TextBlock>
-                    <Slider Style="{StaticResource Slider1}" x:Name="Page2_Slider4" Value="{Binding SliderValue4}" />
+                    <Slider Style="{StaticResource Slider1}" Value="{Binding SliderValue4}" />
                     <Grid Style="{StaticResource GridTestSberQ}">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
@@ -89,7 +90,7 @@
                     </Grid>
 
                     <TextBlock Style="{StaticResource TextQuestionTestSberQMargin07200}">5. Где вы берете вдохновение на развитие:</TextBlock>
-                    <Slider Style="{StaticResource Slider1}" x:Name="Page2_Slider5" Value="{Binding SliderValue5}" />
+                    <Slider Style="{StaticResource Slider1}" Value="{Binding SliderValue5}" />
                     <Grid Style="{StaticResource GridTestSberQ}">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />

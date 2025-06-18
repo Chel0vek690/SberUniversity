@@ -15,6 +15,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="Slider">
                     <Grid Height="51" VerticalAlignment="Center">
+                        <Rectangle Height="35" Fill="#33FFFFFF" Margin="0,0,0,0"  VerticalAlignment="Center"  RadiusX="20" RadiusY="20" Width="870"/>
                         <Track x:Name="PART_Track"
                             Minimum="{TemplateBinding Minimum}"
                             Maximum="{TemplateBinding Maximum}"
@@ -42,19 +43,6 @@
                             </Track.DecreaseRepeatButton>
 
 
-                            <Track.IncreaseRepeatButton>
-                                <RepeatButton Command="Slider.IncreaseLarge"
-                                          Background="#33FFFFFF"
-                                          IsTabStop="False"
-                                          Height="32"
-                                          HorizontalAlignment="Stretch"
-                                          MinWidth="0"
-                                          Width="auto"
-                                          BorderThickness="0"
-                                          IsHitTestVisible="False"
-                                          Margin="-27,0,0,0">
-                                </RepeatButton>
-                            </Track.IncreaseRepeatButton>
 
                             <Track.Thumb>
                                 <Thumb Width="51" Height="51" BorderThickness="0" Margin="-9 2 0 0">
