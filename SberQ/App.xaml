@@ -6,6 +6,8 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/View/Styles/Hyperlinks.xaml" />
+                <ResourceDictionary Source="/View/Styles/CheckBox.xaml" />
                 <ResourceDictionary Source="/View/Styles/Scroll.xaml" />
                 <ResourceDictionary Source="/View/Styles/Sliders.xaml" />
                 <ResourceDictionary Source="/View/Styles/Images.xaml" />
