@@ -8,37 +8,12 @@
         <Setter Property="StackPanel.Margin" Value="60 169 60 0"/>
     </Style>
 
-    <Style x:Key="TextSubjectTestSberQ">
-        <Setter Property="TextBlock.FontWeight" Value="SemiBold"/>
-        <Setter Property="TextBlock.FontFamily" Value="pack://application:,,,/SberQ;component/Assets/Fonts/#SB Sans Display"/>
-        <Setter Property="TextBlock.Foreground" Value="White"/>
-        <Setter Property="TextBlock.FontSize" Value="72"/>
-        <Setter Property="TextBlock.TextAlignment" Value="Left"/>
-    </Style>
-
-    
-
-    <Style x:Key="TextBody1TestSberQ">
-        <Setter Property="TextBlock.FontWeight" Value="Regular"/>
-        <Setter Property="TextBlock.FontFamily" Value="pack://application:,,,/SberQ;component/Assets/Fonts/#SB Sans Text"/>
-        <Setter Property="TextBlock.Foreground" Value="White"/>
-        <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-        <Setter Property="TextBlock.Margin" Value="0 42 0 0"/>
-        <Setter Property="TextBlock.TextAlignment" Value="Left"/>
-        <Setter Property="TextBlock.FontSize" Value="24"/>
-        <Setter Property="TextBlock.Width" Value="auto" />
-    </Style>
-    
-    <Style x:Key="TextBody2TestSberQ" BasedOn="{StaticResource TextBody1TestSberQ}">
-        <Setter Property="TextBlock.Margin" Value="0 16 0 0"/>
-    </Style>
-
     <Style x:Key="MainStackPanel11">
         <Setter Property="StackPanel.Margin" Value="0 95 0 0"/>
         <Setter Property="StackPanel.Clip">
-        <Setter.Value>
-            <RectangleGeometry Rect="0,0,960,1158" RadiusX="36" RadiusY="36"/>
-        </Setter.Value>
+            <Setter.Value>
+                <RectangleGeometry Rect="0,0,960,1158" RadiusX="36" RadiusY="36"/>
+            </Setter.Value>
         </Setter>
         <Setter Property="StackPanel.Orientation" Value="Vertical" />
         <Setter Property="StackPanel.HorizontalAlignment" Value="Right"/>
@@ -47,18 +22,6 @@
         <Setter Property="StackPanel.Background" Value="#33FFFFFF"/>
         <Setter Property="StackPanel.Height" Value="1158"/>
         <Setter Property="StackPanel.Width" Value="960"/>
-    </Style>
-    
-    <Style x:Key="TextQuestionTestSberQ">
-        <Setter Property="TextBlock.FontWeight" Value="SemiBold"/>
-        <Setter Property="TextBlock.FontFamily" Value="pack://application:,,,/SberQ;component/Assets/Fonts/#SB Sans Display"/>
-        <Setter Property="TextBlock.Foreground" Value="White"/>
-        <Setter Property="TextBlock.FontSize" Value="28"/>
-        <Setter Property="TextBlock.TextAlignment" Value="Left"/>
-    </Style>
-
-    <Style x:Key="TextQuestionTestSberQMargin07200" BasedOn="{StaticResource TextQuestionTestSberQ}">
-        <Setter Property="TextBlock.Margin" Value="0 72 0 0" />
     </Style>
 
     <Style TargetType="Slider" x:Key="Slider1">
@@ -141,25 +104,6 @@
 
     <Style x:Key="GridTestSberQ">
         <Setter Property="Grid.Margin" Value="0 8 0 0" />
-    </Style>
-
-    <Style x:Key="GridTextTestSberQ">
-        <Setter Property="TextBlock.FontFamily" Value="pack://application:,,,/SberQ;component/Assets/Fonts/#SB Sans Text"/>
-        <Setter Property="TextBlock.FontSize" Value="20" />
-        <Setter Property="TextBlock.Foreground" Value="White" />
-        <Setter Property="TextBlock.FontWeight" Value="Regular"/>
-    </Style>
-
-    <Style x:Key="GridTextTestSberQLeft" BasedOn="{StaticResource GridTextTestSberQ}">
-        <Setter Property="TextBlock.HorizontalAlignment" Value="Left" />
-    </Style>
-
-    <Style x:Key="GridTextTestSberQCenter" BasedOn="{StaticResource GridTextTestSberQ}">
-        <Setter Property="TextBlock.HorizontalAlignment" Value="Center" />
-    </Style>
-
-    <Style x:Key="GridTextTestSberQRight" BasedOn="{StaticResource GridTextTestSberQ}">
-        <Setter Property="TextBlock.HorizontalAlignment" Value="Right" />
     </Style>
 
 </ResourceDictionary>
