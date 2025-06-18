@@ -10,13 +10,6 @@
         <Setter Property="StackPanel.Margin" Value="0 73 0 0" />
     </Style>
 
-    <Style x:Key="BackgroundText_CheckBox">
-        <Setter Property="Label.FontSize" Value="24" />
-        <Setter Property="Label.FontFamily" Value="pack://application:,,,/SberQ;component/Resources/Fonts/#SB Sans Text" />
-        <Setter Property="Label.FontWeight" Value="Regular" />
-        <Setter Property="Label.Foreground" Value="White" />
-    </Style>
-
     <Style x:Key="checkbox">
         <Setter Property="CheckBox.Margin" Value="0 16 0 0" />
         <Setter Property="CheckBox.Width" Value="796" />

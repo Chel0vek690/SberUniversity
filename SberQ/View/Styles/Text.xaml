@@ -239,4 +239,11 @@
         <Setter Property="TextBlock.Height" Value="152" />
     </Style>
 
+    <Style x:Key="BackgroundText_CheckBox">
+        <Setter Property="Label.FontSize" Value="24" />
+        <Setter Property="Label.FontFamily" Value="pack://application:,,,/SberQ;component/Resources/Fonts/#SB Sans Text" />
+        <Setter Property="Label.FontWeight" Value="Regular" />
+        <Setter Property="Label.Foreground" Value="White" />
+    </Style>
+
 </ResourceDictionary>
