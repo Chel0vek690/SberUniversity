@@ -104,7 +104,7 @@
         </Setter>
     </Style>
 
-    <Style x:Key="Button_finish1">
+    <Style x:Key="Button_complete">
         <Setter Property="Button.Background" Value="#33FFFFFF" />
         <Setter Property="Button.FontFamily" Value="pack://application:,,,/SberQ;component/Resources/Fonts/#SB Sans Text"/>
         <Setter Property="Button.FontSize" Value="24" />
@@ -155,8 +155,8 @@
             </Setter.Value>
         </Setter>
     </Style>
-
-    <Style x:Key="toTheMainPage" BasedOn="{StaticResource Button_finish1}">
+    
+    <Style x:Key="toTheMainPage" BasedOn="{StaticResource Button_complete}">
         <Setter Property="Button.Width" Value="344" />
         <Setter Property="Button.Margin" Value="0 0 0 0" />
 
@@ -165,7 +165,6 @@
     <Style x:Key="TryAgain" BasedOn="{StaticResource Button_getResult}">
         <Setter Property="Button.Width" Value="344" />
         <Setter Property="Button.Margin" Value="32 0 0 0" />
-        <Setter Property="Button.Foreground" Value="#18AA7B" />
     </Style>
 
 </ResourceDictionary>

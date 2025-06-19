@@ -45,7 +45,7 @@
                     </TextBlock>
                 </CheckBox>
                 <StackPanel Style="{StaticResource stackpanel1}">
-                    <Button Style="{StaticResource Button_finish1}" Command="{Binding NavigateStartCommand}">
+                    <Button Style="{StaticResource Button_complete}" Command="{Binding NavigateStartCommand}">
                         <Button.Content>Завершить</Button.Content>
                     </Button>
                     <Button Style="{StaticResource Button_getResult}" Command="{Binding SendEmailCommand}">
