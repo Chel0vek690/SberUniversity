@@ -1,4 +1,7 @@
-﻿using SberQ.ViewModel;
+﻿using Newtonsoft.Json.Linq;
+using SberQ.ViewModel;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
@@ -12,7 +15,6 @@ namespace SberQ
         public Page2()
         {
             InitializeComponent();
-
             var frame = ((MainWindow)Application.Current.MainWindow).toPage1;
             DataContext = new Page2VM(frame);
         }
