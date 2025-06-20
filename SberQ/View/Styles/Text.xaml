@@ -19,17 +19,6 @@
         <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
     </Style>
 
-    <Style x:Key="TextQR">
-        <Setter Property="TextBlock.FontFamily" Value="pack://application:,,,/SberQ;component/Assets/Fonts/#SB Sans Display"/>
-        <Setter Property="TextBlock.Margin" Value="36 0 0 0" />
-        <Setter Property="TextBlock.TextAlignment" Value="Left" />
-        <Setter Property="TextBlock.Foreground" Value="White"/>
-        <Setter Property="TextBlock.FontSize" Value="32"/>
-        <Setter Property="TextBlock.Width" Value="356"/>
-        <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
-        <Setter Property="TextBlock.Height" Value="114" />
-    </Style>
-
     <Style x:Key="TextSubjectTestSberQ">
         <Setter Property="TextBlock.FontWeight" Value="SemiBold"/>
         <Setter Property="TextBlock.FontFamily" Value="pack://application:,,,/SberQ;component/Assets/Fonts/#SB Sans Display"/>
@@ -232,6 +221,9 @@
         <Setter Property="TextBlock.FontSize" Value="32"/>
         <Setter Property="TextBlock.Width" Value="356"/>
         <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+    </Style>
+    <Style x:Key="TextQR" BasedOn="{StaticResource TextQR_Result}">
+        <Setter Property="TextBlock.Height" Value="114" />
     </Style>
 
     <Style x:Key="TextQR1" BasedOn="{StaticResource TextQR_Result}">
