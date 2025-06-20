@@ -53,4 +53,8 @@
     <Page Include="App.xaml" />
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(ProjectDir)Model\Email.json&quot; &quot;$(TargetDir)&quot; /Y" />
+  </Target>
+
 </Project>
