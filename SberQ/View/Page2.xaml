@@ -26,7 +26,7 @@
                         <ItemsControl.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel>
-                                    <TextBlock Style="{StaticResource TextQuestionTestSberQ}" Text="{Binding QuestionText}">1. На какой срок у вас есть карьерная цель:</TextBlock>
+                                    <TextBlock Style="{StaticResource TextQuestionTestSberQ}" Text="{Binding QuestionText}"></TextBlock>
                                     <Slider Style="{StaticResource Slider1}" Value="{Binding SliderValue, Mode=TwoWay}" />
                                 <Grid Style="{StaticResource GridTestSberQ}">
                                     <Grid.ColumnDefinitions>
@@ -34,10 +34,11 @@
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
-                                    <TextBlock Style="{StaticResource GridTextTestSberQLeft}" Text="{Binding Text1}" Grid.Column="0">Нет Цели</TextBlock>
-                                        <TextBlock Style="{StaticResource GridTextTestSberQCenter}" Text="{Binding Text2}" Grid.Column="1">1-3 года</TextBlock>
-                                        <TextBlock Style="{StaticResource GridTextTestSberQRight}" Text="{Binding Text3}" Grid.Column="2">3+ лет</TextBlock>
+                                        <TextBlock Style="{StaticResource GridTextTestSberQLeft}" Text="{Binding Text1}" Grid.Column="0"></TextBlock>
+                                        <TextBlock Style="{StaticResource GridTextTestSberQCenter}" Text="{Binding Text2}" Grid.Column="1"></TextBlock>
+                                        <TextBlock Style="{StaticResource GridTextTestSberQRight}" Text="{Binding Text3}" Grid.Column="2"></TextBlock>
                                 </Grid>
+                                    <StackPanel Margin="0 72 0 0"/> 
                                 </StackPanel>
                                 
                             </DataTemplate>

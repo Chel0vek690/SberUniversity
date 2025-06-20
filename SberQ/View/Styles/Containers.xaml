@@ -47,7 +47,7 @@
         <Setter Property="StackPanel.Margin" Value="0 95 0 0"/>
         <Setter Property="StackPanel.Clip">
             <Setter.Value>
-                <RectangleGeometry Rect="0,0,960,1158" RadiusX="36" RadiusY="36"/>
+                <RectangleGeometry Rect="0,0,960,1140" RadiusX="36" RadiusY="36"/>
             </Setter.Value>
         </Setter>
         <Setter Property="StackPanel.Orientation" Value="Vertical" />
@@ -55,12 +55,12 @@
         <Setter Property="StackPanel.VerticalAlignment" Value="Center"/>
         <Setter Property="StackPanel.Margin" Value="0 42 0 0"/>
         <Setter Property="StackPanel.Background" Value="#33FFFFFF"/>
-        <Setter Property="StackPanel.Height" Value="1158"/>
+        <Setter Property="StackPanel.Height" Value="1140"/>
         <Setter Property="StackPanel.Width" Value="960"/>
     </Style>
 
     <Style x:Key="GridTestSberQ">
-        <Setter Property="Grid.Margin" Value="0 8 0 0" />
+        <Setter Property="Grid.Margin" Value="0 10 0 0" />
     </Style>
 
     <Style x:Key="MainStackPanel_Result">

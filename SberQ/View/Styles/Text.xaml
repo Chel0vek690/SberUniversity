@@ -73,15 +73,18 @@
     </Style>
 
     <Style x:Key="GridTextTestSberQLeft" BasedOn="{StaticResource GridTextTestSberQ}">
-        <Setter Property="TextBlock.HorizontalAlignment" Value="Left" />
+        <Setter Property="TextBlock.TextAlignment" Value="Left" />
+        <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
     </Style>
 
     <Style x:Key="GridTextTestSberQCenter" BasedOn="{StaticResource GridTextTestSberQ}">
-        <Setter Property="TextBlock.HorizontalAlignment" Value="Center" />
+        <Setter Property="TextBlock.TextAlignment" Value="Center" />
+        <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
     </Style>
 
     <Style x:Key="GridTextTestSberQRight" BasedOn="{StaticResource GridTextTestSberQ}">
-        <Setter Property="TextBlock.HorizontalAlignment" Value="Right" />
+        <Setter Property="TextBlock.TextAlignment" Value="Right" />
+        <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
     </Style>
 
     <Style x:Key="YourResult">
